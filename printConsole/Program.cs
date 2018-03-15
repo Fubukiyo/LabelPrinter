@@ -24,7 +24,7 @@ namespace printConsole
                 input = Console.ReadLine();
                 //Console.WriteLine("How many labels?");
                 //choice = Console.Read();
-                toPrint = "${\nCT~~CD,~CC^~CT~\n^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD30^JUS^LRN^CI0^XZ\n^XA\n^MMT\n^PW609\n^LL0203\n^LS-14\n^BY2,3,50^FT85,150^BCN,,N,N\n^fd>:1S^fs" + input + "^FT75,65^A0N,40,40^FH\n^FD^fs\n" + input + "^PQ1,0,1,Y^XZ\n}$";
+                toPrint = "${\nCT~~CD,~CC^~CT~\n^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD30^JUS^LRN^CI0^XZ\n^XA\n^MMT\n^PW609\n^LL0203\n^LS-14\n^BY2,3,50^FT85,150^BCN,,N,N\n^fd>" + input + "^fs\n^FT75,65^A0N,40,40^FH\n^FD" + input + "^fs\n^PQ1,0,1,Y^XZ\n}$";
                 using (System.IO.StreamWriter file = new System.IO.StreamWriter("label.txt", true))
                 {
                     file.WriteLine(toPrint);
